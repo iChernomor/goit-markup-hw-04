@@ -194,6 +194,8 @@ margin-right: 0;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../images/header.jpg);
+
 }
 
 .offer-title {
@@ -207,6 +209,15 @@ margin-right: 0;
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+.offer .container::before { 
+  display: block;
+  content: "";
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
 }
 /* Button */
 .button {
@@ -255,6 +266,55 @@ margin-right: 0;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+.advantage-list:nth-child(1)::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/advantage-svg1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.advantage-list:nth-child(2)::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/advantage-svg2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.advantage-list:nth-child(3)::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/advantage-svg3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.advantage-list:nth-child(4)::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: url(../images/advantage-svg4.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
 .advantage-description {
   color: var(--secondary-text-color);
   font-size: 14px;
@@ -274,8 +334,9 @@ margin-right: 0;
   margin-right: 30px;
 }
 .foto-list :nth-child(3n) {
-  margin-right: 0;
+  /* margin-right: 0; */
 }
+
 /* Team */
 
 .team-title {
@@ -337,6 +398,48 @@ margin-right: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+/* Client */
+.client {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.client .list {
+  width: 170px;
+  margin-right: 30px;
+}
+
+/*  Розміщення постійні клієнти, через псевдокласи */
+/* .about-title::after {
+  display: block;
+  content: "";
+  height: 92px;
+  background-image: url(../images/Client1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-top: 30px;
+}
+.about-title:nth-child(n +1)::before {
+  display: block;
+  content: "";
+  height: 92px;
+  background-image: url(../images/Client2.svg);
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-top: 30px;
+} */
+
+.client :nth-child(6n) {
+  margin-right: 0;
+}
+
 .footer .item-top {
   margin-top: 20px;
  
