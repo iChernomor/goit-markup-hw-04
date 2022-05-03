@@ -206,8 +206,10 @@ margin-right: 0;
 }
 
 /* Offer */
+
 .offer {
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url(../images/header.jpg);
@@ -229,7 +231,7 @@ margin-right: 0;
 .offer .container::before { 
   display: block;
   content: "";
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -381,6 +383,9 @@ margin-right: 0;
   margin-bottom: 30px;
   /* margin-bottom: 94px; */
 }
+.team-inner {
+
+}
 
 .team {
   display: flex;
@@ -391,7 +396,7 @@ margin-right: 0;
 .team-list {
   width: 270px;
   margin-right: 30px;
-  background: #ffffff;
+  background: #F5F4FA;
   background-image: url(../images/symbol-defs.svg);
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -421,7 +426,6 @@ margin-right: 0;
 .nopadtop {
   padding-top: 0px;
   display: flex;
-
 }
 .padtopbot {
   padding-top: 60px;
@@ -441,8 +445,8 @@ margin-right: 0;
 }
 
 .client .list {
-  width: calc(100% / 6 - 30px);
-   
+  /* width: calc(100% / 6 - 30px); */
+   width: 170px;
 }
 .client-link {
   width: 100%;
@@ -575,7 +579,6 @@ fill: #fff;
   height: 44px;
   margin-right: 10px;
   border-radius: 100%;
-    background-color: var(--secondary-text-color);
 
 }
 
@@ -593,9 +596,9 @@ fill: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: tomato; */
   border-radius: 22px;
-  
+background: rgba(255, 255, 255, 0.1);
+
 
 }
 
@@ -653,11 +656,22 @@ fill: #fff;
 .card {
   display: flex;
   flex-wrap: wrap;
+
 }
 .card-list {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.card-list:hover,
+.card-list:focus {
+  border: 5px solid rgba(238, 238, 238, 1);
+  cursor: pointer;
+  stroke: solid #EEEEEE;
+  /* box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2); */
+      
 }
 /* Розрахунок ширини блока в % */
 /* ширина контейнера = 100% - зазор 30рх (при 2 колонках, при 3=60рх і т.д.) / 3 */
