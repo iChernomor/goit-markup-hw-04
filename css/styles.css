@@ -210,10 +210,9 @@ margin-right: 0;
 
 .offer {
   background-color: #2f303a;
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/header.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header.jpg");
 }
 
 .offer-title {
