@@ -579,7 +579,6 @@ fill: #fff;
   height: 44px;
   margin-right: 10px;
   border-radius: 100%;
-
 }
 
 .foot-soc-icon {
@@ -665,7 +664,7 @@ background: rgba(255, 255, 255, 0.1);
 }
 .card-list:hover,
 .card-list:focus {
-  border: 5px solid rgba(238, 238, 238, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
   cursor: pointer;
   stroke: solid #EEEEEE;
   /* box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.12),
